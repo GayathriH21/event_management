@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Program 1b</title>
+    <style>
+        body {
+            background-image: url('../images/login.jpg'); /* Set the background image */
+            background-size: cover; /* Cover the entire body */
+            background-repeat: no-repeat; /* Prevent repeating the image */
+            margin: 100px; /* Remove default margin */
+            /* Full height of the viewport */
+            display: flex; /* Use flexbox for centering */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+        }
+        .container {
+            background-color: pink;
+            margin: auto;
+            width: 100%;
+            padding: 35px;
+        }
+        button {
+            background-color: orange;
+            width: 40%;
+            color: white;
+            padding: 15px;
+            margin: 10px 0px;
+            border: none;
+            cursor: pointer;
+        }
+        input[type=text], input[type=password] {
+            width: 90%;
+            margin: 10px 0;
+            padding: 12px;
+        }
+        button:hover {
+            opacity: 0.8; /* Changed to 0.8 for a more visible hover effect */
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <div class="container">
+            <center><h2>REGISTER TO KNOW MORE</h2></center>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">E-mail:</label><br>
+            <input type="text" id="email" name="email" required><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required><br>
+            <label for="confirmPassword">Confirm Password:</label><br>
+            <input type="password" id="confirmPassword" name="confirmPassword" required><br>
+            <center><button type="submit">Register</button></center>
+        </div>
+    </form>
+</body>
+</html>

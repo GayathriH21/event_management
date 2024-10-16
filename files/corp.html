@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corporate Events - GLOBAL EVENTS</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;	
+        }
+        body {
+            font-family: Verdana, sans-serif; 
+            margin: 0;
+        }
+        h2 {
+            color: blue;
+            font-size: 30px; /* Added px unit */
+            margin-bottom: 10px;
+        }
+        p {
+            color: red;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .bod {
+            background-image: url('../images/c.jpg'); /* Adjust path if necessary */
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .image-slideshow {
+            max-width: 100%;
+            position: relative;
+            margin: auto;
+        }
+        .text {
+            color: white;
+            font-size: 70px;
+            top: 40%;
+            position: absolute;
+            padding-bottom: 18px;
+            width: 100%;
+            text-align: center;
+            margin: auto;
+        }
+        img {
+            width: 100%;
+            height: 510px;
+        }
+        .fade {
+            animation-name: fade;
+            animation-duration: 6s;
+        }
+        @keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+        }
+        footer {
+            height: 50px;
+            background-color: #333;
+            color: #fff;
+            padding-top: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="image-slideshow">
+    <div class="image fade">
+        <img src="../images/c1.jpg" alt="Corporate Event 1">
+        <div class="text">Corporate Events</div>
+    </div>
+        
+    <div class="image fade">
+        <img src="../images/c2.jpg" alt="Corporate Event 2">
+        <div class="text">Corporate Events</div>
+    </div>
+
+    <div class="image fade">
+        <img src="../images/c3.jpg" alt="Corporate Event 3">
+        <div class="text">Corporate Events</div>
+    </div>
+        
+    <div class="image fade">
+        <img src="../images/c4.jpg" alt="Corporate Event 4">
+    </div>
+</div>
+
+<script>
+let index = 0;
+displayImages();
+function displayImages() {
+    let i;
+    const images = document.getElementsByClassName("image");
+    for (i = 0; i < images.length; i++) {
+        images[i].style.display = "none";
+    }
+    index++;
+    if (index > images.length) {
+        index = 1;
+    }
+    images[index-1].style.display = "block";
+    setTimeout(displayImages, 2000); 
+}
+</script>
+
+<div class="bod">
+    <section>
+        <br>
+        <h2><b>CORPORATE EVENT</b></h2>
+        <p><b>A corporate event is an event sponsored by a company and focuses on either its employees or clients. There are many reasons for organizing a corporate event, including: To educate staff or members of the public regarding various concepts promoted by the organization.</b></p>
+        <br><br>
+        <p><b>In the present age, sports and marketing activities have combined in various jobs. One is sports event managers who organize and direct sporting competitions and associated events. One can decide if they want to pursue managing sporting events as a career by learning more about the position. If a person is well-versed in business, they can make a great career in sports-related fields, especially event management.</b></p>
+        <br>
+        <p><b>But what exactly is a sports event manager, and what does he do? A sports event manager, sometimes also known as a sporting event manager, is a specialist in event planning who focuses on organizing and managing sporting events, such as competitions, games, team dinners, and award ceremonies. Some sports event managers may work for major sports leagues, sports complexes, or educational organizations, depending on their expertise.</b></p>
+        <br>
+    </section>
+
+    <center>
+        <img src="../images/cc.jpg" alt="Sample Image" width="100%" height="200">
+    </center>
+    
+    <footer>
+        &copy; 2023 Global Events. All rights reserved.
+    </footer>
+</div>
+
+</body>
+</html>

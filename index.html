@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My website</title>
+    <link href="style.css" rel="stylesheet"/>
+</head>
+
+<body>
+
+<div class="wrapper">
+    
+    <div class="headerdiv">
+
+        <div class="logodiv">
+            <img src="images/image.png" width="160px" height="160px" alt="Logo"></img>
+        </div>
+
+        <div class="heading">
+            <center>
+                <b><h2 style="color:white">GLOBAL EVENTS : EVENT MANAGEMENT <br> YOU DREAM, WE DO</h2></b>
+            </center>
+        </div><!-- end heading div-->
+
+    </div><!-- end header div-->
+    <div class="menubar1">
+        <marquee direction="left" scrollamount="4" OnMouseover="this.stop()" OnMouseout="this.start()">
+            BIRTHDAY | NIGHT PARTY | ANNIVERSARY | FAMILY GATHERING | UNIVERSITY | FESTIVAL ARRANGEMENTS | BABY | DINNER | MARRIAGE CEREMONY | FLOWER DECORATIONS | BALLOON DECORATION | CORPORATE EVENTS AND OFFICE PARTIES
+        </marquee>
+    </div>
+
+    <div class="menubar">
+        <ul id="nav">
+            <li><a href="#">HOME</a></li>
+            <li><a href="files/aboutus.html">ABOUT US</a></li>
+            <li><a href="#">SERVICES</a>
+                <ul>
+                    <li><a href="files/marriage.html">MARRIAGE EVENTS</a></li>
+                    <li><a href="files/corp.html">CORPORATE EVENTS</a></li>
+                    <li><a href="files/concerts.html">CONCERTS</a></li>
+                    <li><a href="files/sports.html">SPORTS AND ENTERTAINMENT</a></li>
+                </ul>
+            </li>
+            <li><a href="files/gallery.html">GALLERY</a></li>
+            <li><a href="files/contactus.html">CONTACT US</a></li>
+            <li><a href="files/pg1b.html"><button type="button" class="btn btn-warning" data-toggle="modal" data-target="#enquiry" target="blank">REGISTER</button></a></li>
+            <li><a href="files/login.html">SIGN UP</a></li>
+        </ul>
+    </div><!-- end menubar div-->
+
+    <main>
+        <div class="column">
+            <h2>EVENT MANAGEMENT</h2>
+            <p><b>Event management is the application of project management to the creation and development of small and/or large-scale personal or corporate events such as festivals, conferences, ceremonies, weddings, formal parties, concerts, or conventions. It involves studying the brand, identifying its target audience, devising the event concept, and coordinating the technical aspects before actually launching the event.</b></p><br>
+            <center><img src="images/homeimg.jpg" alt="Sample Image" width="500" height="300" /></center><br>
+            <p><b>Event management is the process of planning and hosting a variety of public and private events for social or business purposes. They may be large-scale or small-scale events and can include business conventions, training seminars, industry conferences, trade shows, ceremonies, parties, concerts, festivals and press conferences. Event managers must follow the clients' instructions and work within a specified budget and predetermined schedule. To set up the events, they must collaborate with various vendors.</b></p>
+            <br>
+            <p><b>Events create opportunities for people to connect with an area, spend time together, celebrate and experience the diversity of cultures and foster creativity and innovation. They allow a community to come alive and provide an opportunity for a destination to showcase its tourism experience and increase economic activity. Events contribute significantly to community building, lifestyle and leisure enhancement, cultural development, tourism promotion and increased visitation, volunteer participation, fundraising and economic development. Most importantly, events create a sense of fun and vibrancy, resulting in a strong sense of community connectivity, pride and a sense of place.</b></p>
+        </div>
+        
+        <div class="column1">
+            <h2>We Provide Services Like</h2>
+            <marquee direction="up" scrollamount="4" OnMouseover="this.stop()" OnMouseout="this.start()">
+                <ul><b>Flower decoration</b></ul>
+                <ul><b>Balloon decoration</b></ul>
+                <ul><b>Birthday party decoration</b></ul>
+                <ul><b>Anniversary decoration</b></ul>
+                <ul><b>Surprise party</b></ul>
+                <ul><b>Corporate party</b></ul>
+                <ul><b>Engagement decoration</b></ul>
+                <ul><b>Wedding decoration</b></ul>
+                <ul><b>Naming ceremony</b></ul>
+                <ul><b>Candlelight dinner</b></ul>
+                <ul><b>Kids games</b></ul>
+                <ul><b>Photography</b></ul>
+                <ul><b>Tattoos artist</b></ul>
+                <ul><b>Magic show</b></ul>
+                <ul><b>Catering</b></ul>
+            </marquee>
+        </div>
+    </main>
+  
+    <div class="footer">
+        <center>
+            <p><b>&copy; Created by, Gayathri H</b></p>
+            <br>
+            <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook" width="20" height="20"></a>
+            <a href="https://twitter.com"><img src="images/twitter.png" alt="Twitter" width="20" height="20"></a>
+            <a href="https://instagram.com"><img src="images/instagram.png" alt="Instagram" width="20" height="20"></a>
+            <a href="https://linkedin.com"><img src="images/linkedin.png" alt="LinkedIn" width="20" height="20"></a>
+        </center>
+    </div>
+
+</div><!-- end wrapper div-->
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+        apiKey: "AIzaSyAKw0Ygqnc2CKiK8bk8ru_PgT0mm008GlU",
+        authDomain: "event-management-5fce3.firebaseapp.com",
+        projectId: "event-management-5fce3",
+        storageBucket: "event-management-5fce3.appspot.com",
+        messagingSenderId: "912053750491",
+        appId: "1:912053750491:web:8369946c56d09d32729afe"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+</script>
+</body>
+</html>
