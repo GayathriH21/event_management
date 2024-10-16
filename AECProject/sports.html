@@ -1,0 +1,129 @@
+<html>
+  <head>
+<style>
+*{
+	margin:0px;
+	padding:0px;	
+}
+body {
+
+font-family: Verdana, sans-serif; 
+margin:0;
+}
+h2 {
+			color: white;
+			margin-bottom: 10px;
+		}
+		p {
+			color: white;
+			font-size: 16px;
+			line-height: 1.5;
+		}
+.text {
+  color: white;
+  font-size: 70px;
+
+top:40%;
+  position:absolute;
+  padding-bottom:18px;
+  width: 100%;
+  text-align: center;
+margin:auto;
+}
+.bod{
+
+background-image: url('sp.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+}
+.image-slideshow {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+img {
+  width: 100%;
+height:500px;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 4s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+footer {
+height:50px;
+      background-color: #333;
+      color: #fff;
+      padding-top: 10px;
+      text-align: center;
+    }
+</style>
+    <div class="image-slideshow">
+
+      <div class="image fade">
+      <img src="sp1.jpg">
+
+      </div>
+        
+<div class="image fade">
+      <img src="sp2.jpg">
+
+      </div>
+      <div class="image fade">
+      <img src="sp3.jpg">
+<div class="text" >Sports Events</div>
+      </div>
+        
+      <div class="image fade">
+      <img src="sp4.jpg">
+<div class="text" >Sports Events</div>
+      </div>
+    </div>
+    <script >
+let index = 0;
+displayImages();
+function displayImages() {
+  let i;
+  const images = document.getElementsByClassName("image");
+  for (i = 0; i < images.length; i++) {
+    images[i].style.display = "none";
+  }
+  index++;
+  if (index > images.length) {
+    index = 1;
+  }
+  images[index-1].style.display = "block";
+  setTimeout(displayImages, 2000); 
+}
+</script>
+</head>
+<body>
+<div class="bod">
+
+
+	<section>
+		
+
+	<br>
+		<h2><b>SPORTS EVENT</b></h2>
+		<p><b> In the present age, Sports and marketing activities have combined in various jobs. One is Sports event managers who organise and direct sporting competitions and associated events. One can decide if you want to pursue managing sporting events as a career by learning more about the position. If a person is well versed in business, they can make a great career in sports-related fields, especially event management.
+<br>
+<br>
+But what exactly is a sports event manager, and what does he do? A sports event manager, sometimes also known as a sporting event manager, is a specialist in event planning who focuses on organising and managing sporting events, such as competitions, games, team dinners, and award ceremonies. Some sports event managers may work for major sports leagues, sports complexes, or educational organisations, depending on their expertise.
+<br>
+<br>
+
+</div>
+<center> <img src="spp.jpg" alt="Sample Image" width="100%" height="500" /></center>
+	<footer>
+		&copy; 2023 Global Events. All rights reserved.
+	</footer>
+</div>
+  </body>
+</html>

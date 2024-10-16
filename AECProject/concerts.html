@@ -1,0 +1,136 @@
+<html>
+  <head>
+<style>
+*{
+	margin:0px;
+	padding:0px;	
+}
+body {
+
+font-family: Verdana, sans-serif; 
+margin:0;
+}
+h2 {
+			color: white;
+			margin-bottom: 10px;
+		}
+		p {
+			color: white;
+			font-size: 16px;
+			line-height: 1.5;
+		}
+.text {
+  color: white;
+  font-size: 70px;
+
+top:40%;
+  position:absolute;
+  padding-bottom:18px;
+  width: 100%;
+  text-align: center;
+margin:auto;
+}
+.bod{
+
+background-image: url('coo.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+}
+.image-slideshow {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+img {
+  width: 100%;
+height:500px;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 4s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+footer {
+height:50px;
+      background-color: #333;
+      color: #fff;
+      padding-top: 10px;
+      text-align: center;
+    }
+</style>
+    <div class="image-slideshow">
+
+      <div class="image fade">
+      <img src="co1.jpg">
+<div class="text" >CONCERTS</div>
+      </div>
+        
+<div class="image fade">
+      <img src="co2.jpg">
+<div class="text" >CONCERTS</div>
+      </div>
+      <div class="image fade">
+      <img src="co3.jpg">
+<div class="text" >CONCERTS</div>
+      </div>
+        
+      <div class="image fade">
+      <img src="co4.jpg">
+<div class="text" >CONCERTS</div>
+      </div>
+    </div>
+    <script >
+let index = 0;
+displayImages();
+function displayImages() {
+  let i;
+  const images = document.getElementsByClassName("image");
+  for (i = 0; i < images.length; i++) {
+    images[i].style.display = "none";
+  }
+  index++;
+  if (index > images.length) {
+    index = 1;
+  }
+  images[index-1].style.display = "block";
+  setTimeout(displayImages, 2000); 
+}
+</script>
+</head>
+<body>
+<div class="bod">
+
+
+	<section>
+		
+
+	<br>
+		<h2><b>CONCERTS</b></h2>
+		<p><b>Global Events is also a concert event management company in Bangalore, India which is capable of supersede client’s expectations through delivering on-call for events and amusement projects at a world magnificence general. 
+All our expertise and factors when fused collectively brings an outcome that surpasses the said expectations inside the given timelines. An exquisite wonderful Concert that looks like Breeze and amusing to wait. The very middle essence of occasions which includes Live Concerts is the perfect concert planning service, execution without skipping a beat.
+
+Organizing a concert, display or gig wishes enough time, manpower and substances to maintain your audiences engaged with track, play or different elements. We have a decade complete of information to face up to and suffice a dependable enjoy in all types of concert events.
+
+<br>
+<br>
+We have exposure to organizing activities in multiple scenarios with a wide form of enterprise and its audiences right from local, rural to national scale branding. Our pre-planning team makes it sure that we’ve whole statistics on the reason, tasks, expectations of the event plan.
+<br>
+<br>
+But what exactly is a sports event manager, and what does he do? A sports event manager, sometimes also known as a sporting event manager, is a specialist in event planning who focuses on organising and managing sporting events, such as competitions, games, team dinners, and award ceremonies. Some sports event managers may work for major sports leagues, sports complexes, or educational organisations, depending on their expertise.
+<br>
+<br>
+
+</div>
+<center> <img src="co.jpg" alt="Sample Image" width="100%" height="500" /></center>
+	<footer>
+		&copy; 2023 Global Events. All rights reserved.
+	</footer>
+</div>
+  </body>
+</html>
